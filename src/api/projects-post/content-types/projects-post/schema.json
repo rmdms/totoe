@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects_posts",
+  "info": {
+    "singularName": "projects-post",
+    "pluralName": "projects-posts",
+    "displayName": "Projects - Post ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Source_author": {
+      "type": "string",
+      "required": true
+    },
+    "Source_title": {
+      "type": "string",
+      "required": true
+    },
+    "Source_link": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::projects-category.projects-category",
+      "inversedBy": "Posts"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources_posts",
+  "info": {
+    "singularName": "resources-post",
+    "pluralName": "resources-posts",
+    "displayName": "Resources - Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Source_title": {
+      "type": "string",
+      "required": true
+    },
+    "Source_link": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::resources-category.resources-category",
+      "inversedBy": "Posts"
+    }
+  }
+}

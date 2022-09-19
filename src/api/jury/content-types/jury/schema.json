@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "juries",
+  "info": {
+    "singularName": "jury",
+    "pluralName": "juries",
+    "displayName": "Jury"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "spotlights_categories",
+  "info": {
+    "singularName": "spotlights-category",
+    "pluralName": "spotlights-categories",
+    "displayName": "Spotlights - Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::spotlights-post.spotlights-post",
+      "mappedBy": "Categories"
+    }
+  }
+}

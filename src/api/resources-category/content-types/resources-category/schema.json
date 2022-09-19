@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources_categories",
+  "info": {
+    "singularName": "resources-category",
+    "pluralName": "resources-categories",
+    "displayName": "Resources - Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::resources-post.resources-post",
+      "mappedBy": "Categories"
+    }
+  }
+}
