@@ -1,4 +1,14 @@
 module.exports = {
+  email: {
+    config: {
+      provider: "sendmail",
+      settings: {
+        defaultFrom: "remy.benjamin.dumas@email.com",
+        defaultReplyTo: "remy.benjamin.dumas@email.com",
+        testAddress: "remy.benjamin.dumas@email.com",
+      },
+    },
+  },
   comments: {
     relatedContentTypes: {
       posts: {
