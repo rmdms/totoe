@@ -77,6 +77,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::spotlights-post.spotlights-post"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "username"
+    },
+    "Twitter_account": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
     }
   }
 }

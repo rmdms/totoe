@@ -41,7 +41,7 @@
     "Submited_by": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "api::jury.jury"
     },
     "Image": {
       "type": "media",

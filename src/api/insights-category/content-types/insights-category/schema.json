@@ -23,6 +23,12 @@
       "relation": "manyToMany",
       "target": "api::insights-post.insights-post",
       "mappedBy": "Categories"
+    },
+    "tests": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::test.test",
+      "mappedBy": "Categories"
     }
   }
 }

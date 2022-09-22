@@ -4,7 +4,8 @@
   "info": {
     "singularName": "jury",
     "pluralName": "juries",
-    "displayName": "Jury"
+    "displayName": "Jury",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,13 +20,13 @@
       "type": "text",
       "required": true
     },
-    "Avatar": {
-      "allowedTypes": [
-        "images"
-      ],
+    "Image": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
