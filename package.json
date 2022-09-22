@@ -17,8 +17,6 @@
     "@strapi/strapi": "4.3.8",
     "better-sqlite3": "7.4.6",
     "graphiql": "^2.0.7",
-    "pg": "^8.8.0",
-    "pg-connection-string": "^2.5.0",
     "strapi-plugin-comments": "^2.1.8"
   },
   "author": {
